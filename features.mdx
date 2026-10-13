@@ -1,0 +1,146 @@
+---
+title: Features
+description: Explore WRLD's core capabilities across managed IT, cloud, communications, AI, and development.
+---
+
+## Overview
+
+WRLD provides comprehensive services as one accountable partner for your entire technology stack. You get managed IT support, cloud hosting, VoIP communications, automation with AI, and custom web development—all integrated seamlessly.
+
+<Callout kind="info">
+  WRLD's slogan: One accountable partner for the whole stack. Start with any service and scale across all.
+</Callout>
+
+## Key Features
+
+Discover WRLD's main offerings through these feature cards. Each service builds on proactive monitoring, security, and expert support.
+
+<Columns cols={3}>
+  <Card title="Managed IT" icon="shield" href="#managed-it">
+    Proactive monitoring and MSP support to keep your systems running smoothly.
+  </Card>
+  <Card title="Cloud & Hosting" icon="cloud" href="#cloud-hosting">
+    Managed cloud servers, domains, and SSL certificates with root access.
+  </Card>
+  <Card title="VoIP Communications" icon="phone" href="#voip">
+    Business phone systems and UCaaS for reliable team collaboration.
+  </Card>
+  <Card title="Automation & AI" icon="zap" href="#automation-ai">
+    Agentic AI agents and workflow automation to own your processes.
+  </Card>
+  <Card title="Web Development" icon="code" href="#web-development">
+    Custom sites, apps, and integrations tailored to your needs.
+  </Card>
+</Columns>
+
+## Managed IT Support
+
+Jump into managed IT with WRLD's proactive MSP services. You receive 24/7 monitoring, ticket resolution, and optimization.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Create an account at the WRLD console.
+  </Step>
+  <Step title="Onboard Assets" icon="upload">
+    Add your servers and endpoints for scanning.
+  </Step>
+  <Step title="Monitor Dashboard" icon="activity">
+    View real-time alerts and performance metrics.
+  </Step>
+</Steps>
+
+## Cloud and Hosting
+
+Deploy reliably on WRLD's private cloud network. You manage SSD storage with full root access and global CDN.
+
+```javascript
+// Example Node.js app deployment config
+const config = {
+  host: 'https://api.example.com',
+  region: 'us-east',
+  storage: 'ssd-100gb'
+};
+```
+
+<ParamField path="region" param-type="string" required="true">
+  Deployment region like `us-east` or `eu-west`.
+</ParamField>
+
+<ParamField header="Authorization" param-type="string" required="true">
+  Use `YOUR_API_KEY` for authentication.
+</ParamField>
+
+## Service Comparison
+
+Compare features across platforms using these tabs.
+
+<Tabs>
+  <Tab title="Business" icon="users">
+    Ideal for teams needing IT + VoIP.
+    
+    | Feature       | Included |
+    |---------------|----------|
+    | Managed IT    | Yes     |
+    | VoIP          | Yes     |
+    | AI Automation | Add-on  |
+  </Tab>
+  <Tab title="Enterprise" icon="building">
+    Full stack with AI and dev.
+    
+    | Feature       | Included |
+    |---------------|----------|
+    | All Services  | Yes     |
+    | Custom Dev    | Yes     |
+    | Private Cloud | Yes     |
+  </Tab>
+</Tabs>
+
+## Automation and AI Roadmap
+
+Track WRLD's AI evolution with this board.
+
+<Board title="WRLD.AI Roadmap">
+  <BoardColumn title="Planned" color="0" icon="circle">
+    <BoardCard title="Workflow Agents" description="Custom AI for ticketing" icon="bot" dueDate="2025-03-01" />
+    <BoardCard title="Efficiency Audit Tool" description="Automated process review" icon="search" />
+  </BoardColumn>
+  <BoardColumn title="In Progress" color="1" icon="loader">
+    <BoardCard title="MASPs Console" description="Unified IT + AI dashboard" icon="monitor" author="WRLD Team" />
+  </BoardColumn>
+  <BoardColumn title="Live" color="2" icon="check-circle">
+    <BoardCard title="AP Intake System" description="AI-powered ticket triage" icon="inbox" createdAt="2024-11-15" />
+  </BoardColumn>
+</Board>
+
+## Advanced Integrations
+
+<Expandable title="Web Development API Example" default-open="false">
+
+Integrate WRLD services via API. Here's a multi-language example.
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  const response = await fetch('https://api.example.com/v1/deploy', {
+    method: 'POST',
+    headers: { 'Authorization': 'Bearer YOUR_TOKEN' },
+    body: JSON.stringify({ site: 'myapp', framework: 'nextjs' })
+  });
+  const data = await response.json();
+  console.log(data.status);
+  ```
+  ```python
+  import requests
+  response = requests.post(
+      'https://api.example.com/v1/deploy',
+      headers={'Authorization': 'Bearer YOUR_TOKEN'},
+      json={'site': 'myapp', 'framework': 'nextjs'}
+  )
+  print(response.json()['status'])
+  ```
+</CodeGroup>
+
+</Expandable>
+
+<Callout kind="tip">
+  Contact WRLD for a free efficiency audit to identify automation opportunities.
+</Callout>
