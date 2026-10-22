@@ -14,7 +14,7 @@ WRLD provides flexible integrations to connect your IT, cloud, and AI services w
   <Card title="Webhooks" icon="zap" href="#webhooks">
     Receive instant notifications for events like ticket creation or service alerts.
   </Card>
-  <Card title="Third-Party" icon="plug" href="#third-party">
+  <Card title="Third-party" icon="plug" href="#third-party">
     Connect to Slack, Zapier, and more with no-code setups.
   </Card>
 </Columns>
@@ -23,7 +23,7 @@ WRLD provides flexible integrations to connect your IT, cloud, and AI services w
   Generate an API key in your WRLD console at `https://console.wrld.tech/settings/api`.
 </Callout>
 
-## API Access
+## API access
 
 Access WRLD endpoints using HTTPS requests. All calls require Bearer authentication with your API key.
 
@@ -35,7 +35,7 @@ Access WRLD endpoints using HTTPS requests. All calls require Bearer authenticat
   Your WRLD account identifier.
 </ParamField>
 
-### List Integrations
+### List integrations
 
 Retrieve a list of available integrations for your account.
 
@@ -73,20 +73,20 @@ Retrieve a list of available integrations for your account.
   ```
 </Response>
 
-## Webhook Setup
+## Webhook setup
 
 Configure webhooks to push events to your endpoint.
 
 <Steps>
-  <Step title="Create Webhook" icon="plus">
+  <Step title="Create webhook" icon="plus">
     In the WRLD console, navigate to Integrations > Webhooks > New Webhook.
     
     Enter your endpoint URL, e.g., `https://your-webhook-url.com/wrld`.
   </Step>
-  <Step title="Select Events" icon="zap">
-    Choose events like `ticket.created` or `service.alert`.
+  <Step title="Select events" icon="zap">
+    Select events like `ticket.created` or `service.alert`.
   </Step>
-  <Step title="Verify & Test" icon="check-circle">
+  <Step title="Verify & test" icon="check-circle">
     WRLD sends a test payload. Respond with HTTP 200 to confirm.
   </Step>
 </Steps>
@@ -105,9 +105,9 @@ Example incoming payload:
 }
 ````
 
-## Third-Party Integrations
+## Third-party integrations
 
-WRLD supports seamless connections to popular tools.
+WRLD supports connections to popular tools.
 
 <Tabs>
   <Tab title="Slack" icon="message-circle">
@@ -142,25 +142,25 @@ WRLD supports seamless connections to popular tools.
   </Tab>
 </Tabs>
 
-## Custom Integrations Roadmap
+## Custom integrations roadmap
 
 Track upcoming and planned integrations.
 
-<Board title="Integrations Roadmap">
+<Board title="Integrations roadmap">
   <BoardColumn title="Live" color="2" icon="check-circle">
     <BoardCard title="Slack Alerts" description="Real-time notifications" icon="message-circle" />
     <BoardCard title="Zapier" description="No-code automations" icon="zap" />
   </BoardColumn>
-  <BoardColumn title="In Progress" color="1" icon="loader">
+  <BoardColumn title="In progress" color="1" icon="loader">
     <BoardCard title="Microsoft Teams" description="Channel integrations" icon="users" dueDate="2024-12-15" />
   </BoardColumn>
   <BoardColumn title="Planned" color="0" icon="calendar">
-    <BoardCard title="ServiceNow" description="Enterprise ITSM sync" icon="database" />
+    <BoardCard title="ServiceNow" description="Enterprise IT service management (ITSM) sync" icon="database" />
     <BoardCard title="PagerDuty" description="On-call escalations" icon="phone" />
   </BoardColumn>
 </Board>
 
-<Expandable title="Advanced Custom Guides" default-open="false">
+<Expandable title="Advanced custom guides" default-open="false">
   For SDKs or deep integrations, clone the WRLD GitHub repo and extend the client.
   
   ```bash
